@@ -13,6 +13,6 @@ RUN    go get -u github.com/golang/lint/golint \
     && go get -u github.com/alecthomas/gometalinter \
     && go get -u github.com/client9/misspell/... \
     && go get -u github.com/mattn/goveralls \
-    rm -f /go/src /go/pkg
-    
+    && rm -f /go/src /go/pkg
+
 
