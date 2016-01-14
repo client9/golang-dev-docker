@@ -12,5 +12,5 @@ RUN    go get -u github.com/golang/lint/golint \
     && go get -u golang.org/x/tools/cmd/vet \
     && go get -u github.com/alecthomas/gometalinter \
     && go get -u github.com/client9/misspell/... \
-    && go get -u github.com/github.com/mattn/goveralls
+    && go get -u github.com/mattn/goveralls
 
