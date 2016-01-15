@@ -7,7 +7,7 @@ RUN rm -rf /usr/local/go/pkg/bootstrap \
            /usr/local/go/test
 
 # git is only used for coveralls reporting
-RUN apk add --no-cache --update git make \
+RUN apk add --update git make \
     && rm -f /var/cache/apk/*
 
 # these are my standard testing / linting tools
