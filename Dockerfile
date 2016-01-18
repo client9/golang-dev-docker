@@ -2,6 +2,9 @@
 FROM golang:alpine
 MAINTAINER https://github.com/client9/golang-dev-docker
 
+# cache buster
+RUN echo 1453146627
+
 # git is only used for coveralls reporting
 RUN apk add --update git make \
     && rm -f /var/cache/apk/*
