@@ -3,7 +3,7 @@ FROM golang:alpine
 MAINTAINER https://github.com/client9/golang-dev-docker
 
 # cache buster
-RUN echo 1453146627
+RUN echo 1453226047
 
 # git is only used for coveralls reporting
 RUN apk add --update git make \
