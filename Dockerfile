@@ -1,16 +1,16 @@
-# A container for testing libinjection
+# A container for testing generic golang development
 FROM golang:alpine
 MAINTAINER https://github.com/client9/golang-dev-docker
 
 # cache buster
-RUN echo 1453226047
+RUN echo 1457336152
 
 # git is only used for coveralls reporting
-RUN apk add --update git make \
-    && rm -f /var/cache/apk/*
+RUN apk add --no-cache git make
 
 # these are my standard testing / linting tools
-RUN    go get -u github.com/golang/lint/golint \
+RUN /bin/true \
+    && go get -u github.com/golang/lint/golint \
     && go get -u golang.org/x/tools/cmd/goimports \
     && go get -u golang.org/x/tools/cmd/vet \
     && go get -u github.com/alecthomas/gometalinter \
