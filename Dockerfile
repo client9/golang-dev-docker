@@ -1,4 +1,5 @@
 # A container for testing generic golang development
+# https://hub.docker.com/_/golang/
 FROM golang:alpine
 MAINTAINER https://github.com/client9/golang-dev-docker
 
