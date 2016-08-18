@@ -4,7 +4,7 @@ FROM golang:alpine
 MAINTAINER https://github.com/client9/golang-dev-docker
 
 # cache buster
-RUN echo 1457336152
+RUN echo 1457336153
 
 # git is only used for coveralls reporting
 RUN apk add --no-cache git make
