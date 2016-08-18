@@ -1,6 +1,6 @@
 # A container for testing generic golang development
 # https://hub.docker.com/_/golang/
-FROM golang:alpine
+FROM golang:1.7.0-alpine
 MAINTAINER https://github.com/client9/golang-dev-docker
 
 # cache buster
@@ -15,7 +15,7 @@ RUN /bin/true \
     && go get -u golang.org/x/tools/cmd/goimports \
     && go get -u golang.org/x/tools/cmd/vet \
     && go get -u github.com/alecthomas/gometalinter \
-    && go get -u github.com/client9/misspell/... \
+    && go get -u github.com/client9/misspell/cmd/misspell \
     && go get -u github.com/mattn/goveralls \
     && rm -rf /go/src /go/pkg
 
